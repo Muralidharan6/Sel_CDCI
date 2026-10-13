@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="TestBase.Listener"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="UI_Error_Test(failed)" verbose="0">
+    <classes>
+      <class name="Courses.SeleniumFrame.UIErrorValidation">
+        <methods>
+          <include name="tearDown"/>
+          <include name="ErrorValudation"/>
+          <include name="cartProduct"/>
+          <include name="launchApp"/>
+        </methods>
+      </class> <!-- Courses.SeleniumFrame.UIErrorValidation -->
+    </classes>
+  </test> <!-- UI_Error_Test(failed) -->
+  <test thread-count="5" parallel="tests" name="SubmitOrder_Test(failed)" verbose="0">
+    <classes>
+      <class name="Courses.SeleniumFrame.EndTo">
+        <methods>
+          <include name="tearDown"/>
+          <include name="OrderList"/>
+          <include name="launchApp"/>
+          <include name="SubmitOrder"/>
+        </methods>
+      </class> <!-- Courses.SeleniumFrame.EndTo -->
+    </classes>
+  </test> <!-- SubmitOrder_Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
